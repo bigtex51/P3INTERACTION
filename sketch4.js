@@ -27,6 +27,7 @@ function sketch4(p) {
 
     if (set == 0) {
       let fixedW = 700;
+      let fixedH = fixedW * (imgLegs.height / imgLegs.width);
       p.image(imgLegs, 150, -50 * 0.35, fixedW, fixedH);
 
       drawLine(p, line1, l1Hovered, 80, 700, 36);
@@ -38,7 +39,7 @@ function sketch4(p) {
       p.image(imgHead, (1000 - fixedW) / 2, 300, fixedW, fixedH);
 
       drawLine(p, line2, l2Hovered, 80, 150, 58);
-      drawLine(p, line3, l3Hovered, 60, 260, 72);
+      drawLine(p, line3, l3Hovered, 60, 260, 58);
     }
 
     nextButton(p);
